@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap") * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #007ea7;
+  --primary-light: #7db1cb;
+  --body: #fefefe;
+  --white: #ffff;
+  --brokenwhite: #f0f0f0;
+  --dark: #0d1a22;
+}
+
+.navbar-brand img {
+  height: 42px;
+}
+.btn {
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: var(--primary-light);
+}
+.btn-primary,
+.btn-outline-secondary {
+  padding: 8px 20px;
+}
+.btn-outline-secondary {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+.btn-outline-secondary:hover {
+  background-color: var(--primary);
+  color: var(--brokenwhite);
+}
+.navbar .btn-outline-secondary {
+  border: 1px solid var(--primary);
+  font-size: 20px;
+  font-weight: 600;
+
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 16px;
+}
+.navbar {
+  padding: 16px 0;
+  border-bottom: solid 1px #d2d2d2;
+}
+/* hero section */
+
+section.hero .text {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+section.hero .buttons {
+  margin-top: 24px;
+}
+section.hero .hero-text {
+  flex-direction: column;
+  gap: 12px;
+}
+/* produk sect */
+
+section.produk .price {
+  font-size: 24px;
+}
+section.produk .card-img-top {
+  padding: 20px;
+  border-radius: 32px;
+}
+section.produk .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+section.produk .card-title {
+  display: flex;
+  align-self: flex-start;
+  text-align: left;
+}
+/* responsive */
+@media (max-width: 768px) {
+  section.produk .price {
+    font-size: 14px;
+  }
+  section.produk .btn-primary {
+    padding: 4px 12px;
+    border-radius: 4px;
+  }
+}
